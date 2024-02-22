@@ -1,13 +1,20 @@
+import "./Header.scss";
 //import React from "react";
-
+import LogoKasa from '@/assets/logoKasa.svg';
+import NavBar from "./NavBar";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
+    console.log(LogoKasa);
     return (
-        <div>
-          
-            <h1> Header For React + vite</h1>
-        </div>
+        <header>
+            <div className='logo'>
+            <Link to='/'>
+                 <img src={LogoKasa} alt="Logo de Kasa" />
+            </Link></div>
+            <NavBar />
+        </header>
     );
 };
 

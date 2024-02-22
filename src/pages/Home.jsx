@@ -1,28 +1,22 @@
 import React, {useState} from "react";
-import Formulaire from "@partials/Formulaire";
+import DataLogements from '@/data/logements.json'
 import Header from "@layout/Header";
 import Footer from "@layout/Footer";
+import Banner from "@partials/Banner";
+import BannerImg from "@/assets/banner_home.jpg";
+import Cards from "@partials/Cards";
 
 
 
 const Home  = () => {
-    const [count, setCount] = useState(0);
-
-    return (
+     return (
         <>
-          <Header />
-          <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
-              count is {count}
-            </button>
-            <p>
-              Edit <code>src/App.jsx</code> and save to test HMR
-            </p>
-          </div>
-          <Formulaire />
-          <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-          </p>
+           <Header />
+           <Banner
+              text="Chez vous, partout et ailleurs"
+              imageUrl={BannerImg}
+          />  
+          <Cards data={DataLogements}/>
           <Footer />
         </>
       )

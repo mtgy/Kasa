@@ -1,0 +1,15 @@
+nav {
+    margin-top: 10px;
+
+  }
+
+nav a {
+    text-transform: uppercase;
+    margin-left: 2rem;
+  
+    @media only screen and (min-width: 768px) {
+      text-transform: none; 
+      font-size: 24px;
+      margin-left: 5rem;
+    }
+  }
