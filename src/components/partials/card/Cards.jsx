@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cards.scss'; 
 
 const Card = ({ title, cover }) => {
     return (
@@ -12,7 +13,7 @@ const Card = ({ title, cover }) => {
   
   const Cards = ({ data }) => {
     return (
-      <div className="card-list">
+      <div className="cardList">
         {data.map((item) => (
           <Card key={item.id} title={item.title} cover={item.cover} />
         ))}

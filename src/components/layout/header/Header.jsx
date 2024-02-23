@@ -1,7 +1,7 @@
 import "./Header.scss";
 //import React from "react";
 import LogoKasa from '@/assets/logoKasa.svg';
-import NavBar from "./NavBar";
+import NavBar from "@layout/navBar/NavBar";
 import { Link } from "react-router-dom";
 
 

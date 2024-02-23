@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from "@partials/Banner";
+import Banner from "@partials/banner/Banner";
 import BannerImg from "@/assets/banner_about.jpg"
 
 const About = () => {
